@@ -146,6 +146,8 @@
                   <th>Date</th>
                   <th>Category</th>
                   <th>Product Name</th>
+                  <th>Container</th>
+                  <th>Weight</th>
                   <th>Opening</th>
                   <th>Add</th>
                   <th>Closing</th>
@@ -166,9 +168,11 @@
                          
                           echo"
                         <tr>
-                        <td>".date('M d, Y', strtotime($row['date_product']))."</td>
+                        <td>".$row['date_product']."</td>
                         <td>".$row['name']."</td>
                         <td>".$row['name_product']."</td>
+                        <td>".$row['container_name']."</td>
+                        <td>".$row['container_weight']."</td>
                         <td>".$row['opening_product']."</td>
                         <td>".$row['add_product']."</td>
                         <td>".$row['closing_product']."</td>

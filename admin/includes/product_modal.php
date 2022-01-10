@@ -42,7 +42,23 @@
                   	<label for="name_product" class="col-sm-3 control-label">Product Name</label>
 
                   	<div class="col-sm-9">
-                    	<input type="text" class="form-control" id="name_product" name="name_product" required>
+                    	<input autocomplete="off" type="text" class="form-control" id="name_product" name="name_product" required>
+                  	</div>
+                </div>
+
+                <div class="form-group">
+                  	<label for="container_name" class="col-sm-3 control-label">Container</label>
+
+                  	<div class="col-sm-9">
+                    	<input autocomplete="off" type="text" class="form-control" id="container_name" name="container_name" required>
+                  	</div>
+                </div>
+
+                <div class="form-group">
+                  	<label for="container_weight" class="col-sm-3 control-label">Weight</label>
+
+                  	<div class="col-sm-9">
+                    	<input autocomplete="off" type="text" class="form-control" id="container_weight" name="container_weight" required>
                   	</div>
                 </div>
 
@@ -51,28 +67,28 @@
                     <label for="rate" class="col-sm-3 control-label">Opening</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="opening" name="opening" required>
+                      <input  autocomplete="off" type="text" class="form-control" id="opening" name="opening" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="rate" class="col-sm-3 control-label">Add</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="add" name="add_product" >
+                      <input autocomplete="off" type="text" class="form-control" id="add" name="add_product" >
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="rate" class="col-sm-3 control-label">Closing</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="closing" name="closing" >
+                      <input autocomplete="off" type="text" class="form-control" id="closing" name="closing" >
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="rate" class="col-sm-3 control-label">Warning</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="warning" name="warning" required>
+                      <input autocomplete="off" type="text" class="form-control" id="warning" name="warning" required>
                     </div>
                 </div>
           	</div>
@@ -125,37 +141,52 @@
                     <label for="edit_product" class="col-sm-3 control-label">Product Name</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="edit_product" name="namep">
+                      <input autocomplete="off" type="text" class="form-control" id="edit_product" name="namep">
                     </div>
                 </div>
 
+                <div class="form-group">
+                  	<label for="container_name" class="col-sm-3 control-label">Container</label>
+
+                  	<div class="col-sm-9">
+                    	<input type="text" class="form-control" id="edit_container" name="container_name">
+                  	</div>
+                </div>
+
+                <div class="form-group">
+                  	<label for="container_weight" class="col-sm-3 control-label">Weight</label>
+
+                  	<div class="col-sm-9">
+                    	<input type="text" class="form-control" id="edit_weight" name="container_weight">
+                  	</div>
+                </div>
 
                 <div class="form-group">
                     <label for="rate" class="col-sm-3 control-label">Opening</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="edit_opening" name="opening" >
+                      <input autocomplete="off" type="text" class="form-control" id="edit_opening" name="opening" >
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="rate" class="col-sm-3 control-label">Add</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="edit_add" name="add_product" >
+                      <input autocomplete="off" type="text" class="form-control" id="edit_add" name="add_product" >
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="rate" class="col-sm-3 control-label">Closing</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="edit_closing" name="closing" >
+                      <input autocomplete="off" type="text" class="form-control" id="edit_closing" name="closing" >
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="rate" class="col-sm-3 control-label">Warning</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="edit_warning" name="warning" >
+                      <input autocomplete="off" type="text" class="form-control" id="edit_warning" name="warning" >
                     </div>
                 </div>
                 

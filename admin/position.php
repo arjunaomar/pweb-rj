@@ -53,8 +53,6 @@
               <table id="example1" class="table table-bordered">
                 <thead>
                   <th>Position Title</th>
-                  <!-- <th>Rate per Hour</th> -->
-                  <!-- <td>".number_format($row['rate'], 2)."</td> -->
                   <th>Tools</th>
                 </thead>
                 <tbody>
@@ -64,7 +62,7 @@
                     while($row = $query->fetch_assoc()){
                       echo "
                         <tr>
-                          <td>".$row['description']."</td>
+                          <td>".$row['position']."</td>
                          
                           <td>
                             <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['id']."'><i class='fa fa-edit'></i> Edit</button>
@@ -100,10 +98,9 @@
     success: function(response){
       $('#edit').modal('show');
       $('#posid').val(response.id);
-      $('#edit_title').val(response.description);
-      $('#edit_rate').val(response.rate);
+      $('#edit_title').val(response.position);
       $('#del_posid').val(response.id);
-      $('#del_position').html(response.description);
+      $('#del_position').html(response.position);
     }
   });
     });
@@ -119,10 +116,9 @@
     success: function(response){
       $('#delete').modal('show');
       $('#posid').val(response.id);
-      $('#edit_title').val(response.description);
-      $('#edit_rate').val(response.rate);
+      $('#edit_title').val(response.position);
       $('#del_posid').val(response.id);
-      $('#del_position').html(response.description);
+      $('#del_position').html(response.position);
     }
   });
     });

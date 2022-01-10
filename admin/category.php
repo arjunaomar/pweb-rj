@@ -53,8 +53,6 @@
               <table id="example1" class="table table-bordered">
                 <thead>
                   <th>Category Name</th>
-                  <!-- <th>Rate per Hour</th> -->
-                  <!-- <td>".number_format($row['rate'], 2)."</td> -->
                   <th>Tools</th>
                 </thead>
                 <tbody>
@@ -126,27 +124,6 @@
   });
     });
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </script>
 </body>

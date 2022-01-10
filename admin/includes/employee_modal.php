@@ -13,21 +13,21 @@
                   	<label for="firstname" class="col-sm-3 control-label">Firstname</label>
 
                   	<div class="col-sm-9">
-                    	<input type="text" class="form-control" id="firstname" name="firstname" required>
+                    	<input autocomplete="off" type="text" class="form-control" id="firstname" name="firstname" required>
                   	</div>
                 </div>
                 <div class="form-group">
                   	<label for="lastname" class="col-sm-3 control-label">Lastname</label>
 
                   	<div class="col-sm-9">
-                    	<input type="text" class="form-control" id="lastname" name="lastname" required>
+                    	<input autocomplete="off" type="text" class="form-control" id="lastname" name="lastname" required>
                   	</div>
                 </div>
                 <div class="form-group">
                   	<label for="address" class="col-sm-3 control-label">Address</label>
 
                   	<div class="col-sm-9">
-                      <textarea class="form-control" name="address" id="address"></textarea>
+                      <textarea autocomplete="off" class="form-control" name="address" id="address"></textarea>
                   	</div>
                 </div>
                 <div class="form-group">
@@ -35,7 +35,7 @@
 
                   	<div class="col-sm-9"> 
                       <div class="date">
-                        <input type="text" class="form-control" id="datepicker_add" name="birthdate">
+                        <input autocomplete="off" type="text" class="form-control" id="datepicker_add" name="birthdate">
                       </div>
                   	</div>
                 </div>
@@ -43,7 +43,7 @@
                     <label for="contact" class="col-sm-3 control-label">Contact Info</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="contact" name="contact">
+                      <input autocomplete="off" type="text" class="form-control" id="contact" name="contact">
                     </div>
                 </div>
                 <div class="form-group">
@@ -68,7 +68,7 @@
                           $query = $conn->query($sql);
                           while($prow = $query->fetch_assoc()){
                             echo "
-                              <option value='".$prow['id']."'>".$prow['description']."</option>
+                              <option value='".$prow['id']."'>".$prow['position']."</option>
                             ";
                           }
                         ?>
@@ -148,7 +148,7 @@
 
                     <div class="col-sm-9"> 
                       <div class="date">
-                        <input type="text" class="form-control" id="datepicker_edit" name="birthdate">
+                        <input autocomplete="off" type="text" class="form-control" id="datepicker_edit" name="birthdate">
                       </div>
                     </div>
                 </div>
@@ -181,7 +181,7 @@
                           $query = $conn->query($sql);
                           while($prow = $query->fetch_assoc()){
                             echo "
-                              <option value='".$prow['id']."'>".$prow['description']."</option>
+                              <option value='".$prow['id']."'>".$prow['position']."</option>
                             ";
                           }
                         ?>

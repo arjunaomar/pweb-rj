@@ -3,9 +3,9 @@
 
 	if(isset($_POST['add'])){
 		$title = $_POST['title'];
-		$rate = $_POST['rate'];
+		$amount = $_POST['amount'];
 
-		$sql = "INSERT INTO aset (name, amount) VALUES ('$title', '$rate')";
+		$sql = "INSERT INTO aset (name, amount) VALUES ('$title', '$amount')";
 		if($conn->query($sql)){
 			$_SESSION['success'] = 'Aset added successfully';
 		}

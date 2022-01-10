@@ -70,7 +70,7 @@
                           <td><?php echo $row['employee_id']; ?></td>
                           <td><img src="<?php echo (!empty($row['photo']))? '../images/'.$row['photo']:'../images/profile.jpg'; ?>" width="30px" height="30px"> <a href="#edit_photo" data-toggle="modal" class="pull-right photo" data-id="<?php echo $row['empid']; ?>"><span class="fa fa-edit"></span></a></td>
                           <td><?php echo $row['firstname'].' '.$row['lastname']; ?></td>
-                          <td><?php echo $row['description']; ?></td>
+                          <td><?php echo $row['position']; ?></td>
                           <td><?php echo date('h:i A', strtotime($row['time_in'])).' - '.date('h:i A', strtotime($row['time_out'])); ?></td>
                           <td><?php echo date('M d, Y', strtotime($row['created_on'])) ?></td>
                           <td>
@@ -116,7 +116,7 @@
       $('#datepicker_edit').val(response.birthdate);
       $('#edit_contact').val(response.contact_info);
       $('#gender_val').val(response.gender).html(response.gender);
-      $('#position_val').val(response.position_id).html(response.description);
+      $('#position_val').val(response.position_id).html(response.position);
       $('#schedule_val').val(response.schedule_id).html(response.time_in+' - '+response.time_out);
     }
   });
@@ -143,7 +143,7 @@
       $('#datepicker_edit').val(response.birthdate);
       $('#edit_contact').val(response.contact_info);
       $('#gender_val').val(response.gender).html(response.gender);
-      $('#position_val').val(response.position_id).html(response.description);
+      $('#position_val').val(response.position_id).html(response.position);
       $('#schedule_val').val(response.schedule_id).html(response.time_in+' - '+response.time_out);
     }
   });
@@ -168,7 +168,7 @@
       $('#datepicker_edit').val(response.birthdate);
       $('#edit_contact').val(response.contact_info);
       $('#gender_val').val(response.gender).html(response.gender);
-      $('#position_val').val(response.position_id).html(response.description);
+      $('#position_val').val(response.position_id).html(response.position);
       $('#schedule_val').val(response.schedule_id).html(response.time_in+' - '+response.time_out);
     }
   });
