@@ -30,7 +30,7 @@
 
                   	<div class="col-sm-9">
                   		<div class="bootstrap-timepicker">
-                    		<input autocomplete="off" type="text" class="form-control timepicker" id="time_in" name="time_in">
+                    		<input type="text" class="form-control timepicker" id="time_in" name="time_in">
                     	</div>
                   	</div>
                 </div>
@@ -39,7 +39,7 @@
 
                   	<div class="col-sm-9">
                   		<div class="bootstrap-timepicker">
-                    		<input autocomplete="off" type="text" class="form-control timepicker" id="time_out" name="time_out">
+                    		<input type="text" class="form-control timepicker" id="time_out" name="time_out">
                     	</div>
                   	</div>
                 </div>
@@ -70,7 +70,7 @@
 
                     <div class="col-sm-9"> 
                       <div class="date">
-                        <input type="text" class="form-control" id="datepicker_edit" name="edit_date">
+                        <input autocomplete="off" type="text" class="form-control" id="datepicker_edit" name="edit_date" required>
                       </div>
                     </div>
                 </div>
