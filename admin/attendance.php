@@ -14,7 +14,7 @@
         Attendance
       </h1>
       <ol class="breadcrumb">
-        <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Attendance</li>
       </ol>
     </section>
@@ -68,7 +68,7 @@
                       echo "
                         <tr>
                           <td class='hidden'></td>
-                          <td>".date('M d, Y', strtotime($row['date']))."</td>
+                          <td>".$row['date']."</td>
                           <td>".$row['empid']."</td>
                           <td>".$row['firstname'].' '.$row['lastname']."</td>
                           <td>".date('h:i A', strtotime($row['time_in'])).$status."</td>

@@ -42,16 +42,9 @@
                     <label for="edit_title" class="col-sm-3 control-label">Category Name</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="edit_title" name="title">
+                      <input autocomplete="off" type="text" class="form-control" id="edit_title" name="title">
                     </div>
                 </div>
-                <!-- <div class="form-group">
-                    <label for="edit_rate" class="col-sm-3 control-label">Rate per Hr</label>
-
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" id="edit_rate" name="rate">
-                    </div>
-                </div> -->
           	</div>
           	<div class="modal-footer">
             	<button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>

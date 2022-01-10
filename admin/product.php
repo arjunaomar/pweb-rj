@@ -55,6 +55,8 @@
                   <th>Date</th>
                   <th>Category</th>
                   <th>Product Name</th>
+                  <th>Container</th>
+                  <th>Weight</th>
                   <th>Opening</th>
                   <th>Add</th>
                   <th>Closing</th>
@@ -68,16 +70,17 @@
                     while($row = $query->fetch_assoc()){
                       $qty_status = '';
                           if($row['closing_product'] != 0){
-                           
                             if($row['closing_product'] <= $row['warning_product']) {
                             $qty_status = '<span class="label label-warning pull-right">Low !</span>';
                           }}
                          
                         echo"
                           <tr>
-                            <td>".date('M d, Y', strtotime($row['date_product']))."</td>
+                            <td>".$row['date_product']."</td>
                             <td>".$row['name']."</td>
                             <td>".$row['name_product']."</td>
+                            <td>".$row['container_name']."</td>
+                            <td>".$row['container_weight']."</td>
                             <td>".$row['opening_product']."</td>
                             <td>".$row['add_product']."</td>
                             <td>".$row['closing_product']."</td>
@@ -118,6 +121,8 @@
       $('#proid').val(response.proid);
       $('#edit_category').val(response.name);
       $('#edit_product').val(response.name_product);
+      $('#edit_container').val(response.container_name);
+      $('#edit_weight').val(response.container_weight);
       $('#edit_opening').val(response.opening_product);
       $('#edit_add').val(response.add_product);
       $('#edit_closing').val(response.closing_product);
@@ -144,6 +149,8 @@
       $('#proid').val(response.proid);
       $('#edit_category').val(response.name);
       $('#edit_product').val(response.name_product);
+      $('#edit_container').val(response.container_name);
+      $('#edit_weight').val(response.container_weight);
       $('#edit_opening').val(response.opening_product);
       $('#edit_add').val(response.add_product);
       $('#edit_closing').val(response.closing_product);

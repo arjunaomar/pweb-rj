@@ -5,22 +5,22 @@
           	<div class="modal-header">
             	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
               		<span aria-hidden="true">&times;</span></button>
-            	<h4 class="modal-title"><b>Add Aset</b></h4>
+            	<h4 class="modal-title"><b>Add Asset</b></h4>
           	</div>
           	<div class="modal-body">
             	<form class="form-horizontal" method="POST" action="aset_add.php">
           		  <div class="form-group">
-                  	<label for="title" class="col-sm-3 control-label">Aset Name</label>
+                  	<label for="title" class="col-sm-3 control-label">Asset Name</label>
 
                   	<div class="col-sm-9">
                     	<input autocomplete="off" type="text" class="form-control" id="title" name="title" required>
                   	</div>
                 </div>
                 <div class="form-group">
-                    <label for="rate" class="col-sm-3 control-label">Amount</label>
+                    <label for="amount" class="col-sm-3 control-label">Amount</label>
 
                     <div class="col-sm-9">
-                      <input autocomplete="off" type="text" class="form-control" id="rate" name="rate" required>
+                      <input autocomplete="off" type="text" class="form-control" id="amount" name="amount" required>
                     </div>
                 </div>
           	</div>
@@ -40,23 +40,23 @@
           	<div class="modal-header">
             	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
               		<span aria-hidden="true">&times;</span></button>
-            	<h4 class="modal-title"><b>Update Aset</b></h4>
+            	<h4 class="modal-title"><b>Update Asset</b></h4>
           	</div>
           	<div class="modal-body">
             	<form class="form-horizontal" method="POST" action="aset_edit.php">
             		<input type="hidden" id="asetid" name="id">
                 <div class="form-group">
-                    <label for="edit_name" class="col-sm-3 control-label">Aset Name</label>
+                    <label for="edit_name" class="col-sm-3 control-label">Asset Name</label>
 
                     <div class="col-sm-9">
-                      <input autocomplete="off" type="text" class="form-control" id="edit_name" name="title">
+                      <input type="text" class="form-control" id="edit_name" name="title">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="edit_amount" class="col-sm-3 control-label">Amount</label>
 
                     <div class="col-sm-9">
-                      <input autocomplete="off" type="text" class="form-control" id="edit_amount" name="rate">
+                      <input type="text" class="form-control" id="edit_amount" name="amount">
                     </div>
                 </div>
           	</div>

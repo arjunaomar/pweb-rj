@@ -11,12 +11,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Aset
+        Asset
       </h1>
       <ol class="breadcrumb">
         <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li>Bussiness</li>
-        <li class="active">Aset</li>
+        <li>Business</li>
+        <li class="active">Asset</li>
       </ol>
     </section>
     <!-- Main content -->

@@ -3,10 +3,10 @@
 
 	if(isset($_POST['edit'])){
 		$id = $_POST['id'];
-		$title = $_POST['title'];
-		$rate = $_POST['rate'];
+		$position = $_POST['title'];
+		
 
-		$sql = "UPDATE position SET description = '$title', rate = '$rate' WHERE id = '$id'";
+		$sql = "UPDATE position SET position = '$position' WHERE id = '$id'";
 		if($conn->query($sql)){
 			$_SESSION['success'] = 'Position updated successfully';
 		}

@@ -4,9 +4,9 @@
 	if(isset($_POST['edit'])){
 		$id = $_POST['id'];
 		$title = $_POST['title'];
-		$rate = $_POST['rate'];
+		$amount = $_POST['amount'];
 
-		$sql = "UPDATE aset SET name = '$title', amount = '$rate' WHERE id = '$id'";
+		$sql = "UPDATE aset SET name = '$title', amount = '$amount' WHERE id = '$id'";
 		if($conn->query($sql)){
 			$_SESSION['success'] = 'Aset updated successfully';
 		}
