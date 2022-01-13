@@ -65,7 +65,7 @@
                 </thead>
                 <tbody>
                   <?php
-                    $sql = "SELECT *, products.id AS proid FROM products LEFT JOIN category ON category.id=products.category_id";
+                    $sql = "SELECT *, products.id AS proid FROM products LEFT JOIN category ON category.id=products.category_id ORDER BY products.date_product DESC";
                     $query = $conn->query($sql);
                     while($row = $query->fetch_assoc()){
                       $qty_status = '';
